@@ -11,7 +11,7 @@ public class Main {
         int [] a ={3,5,12,450,1,1,5,6,23,6,8,9,321,2,3};
         System.out.println(ratioArray(a));
     }
-    private static int ratioArray(int[] a){
+    private static double ratioArray(int[] a){
         int max1 = 0;
         int max2 = 0;
 
@@ -38,6 +38,6 @@ public class Main {
                 min2 =a[i];
             }
         }
-        return (max1+max2)/(min1+min2);
+        return (double) (max1+max2)/(min1+min2);
     }
 }
